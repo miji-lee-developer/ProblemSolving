@@ -21,7 +21,15 @@ def fairRations(B):
                 else:
                     B[i + 1] += 1
 
-        return res
+        for i in B:
+            if i % 2 != 0:
+                res = -1
+                break
+
+        if res < 0:
+            return "NO"
+        else:
+            return res
 
 if __name__ == '__main__':
     N = int(input())
