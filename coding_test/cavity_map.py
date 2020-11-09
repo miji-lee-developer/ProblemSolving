@@ -8,23 +8,16 @@ import sys
 
 # Complete the cavityMap function below.
 def cavityMap(grid):
-    m = 0
-    for i in range(len(grid)):
-        for j in range(len(grid)):
-            if (i == 0 or i == len(grid) - 1) and (j == 0 or j == len(grid) - 1):
-                continue
-            else:
-                v = int(grid[i][j])
-                if v > m:
-                    m = v
+    s = []
 
-    for i in range(len(grid)):
-        for j in range(len(grid)):
-            if (i == 0 or i == len(grid) - 1) and (j == 0 or j == len(grid) - 1):
-                continue
-            else:
-                if int(grid[i][j]) == m:
-                    grid[i] = grid[i][:j] + "X" + grid[i][j + 1:]
+    for i in range(1, len(grid) - 1):
+        for j in range(1, len(grid) - 1):
+            l = [int(grid[i - 1][j]), int(grid[i][j - 1]), int(grid[i][j + 1]), int(grid[i + 1][j])]
+            if max(l) < int(grid[i][j]):
+                s.append([i, j])
+
+    for i, j in s:
+        grid[i] = grid[i][:j] + 'X' + grid[i][j + 1:]
 
     return grid
 
