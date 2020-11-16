@@ -28,14 +28,18 @@ def minimumNumber(n, password):
                 break
 
         if False in cl:
+            r = 0
+            for b in cl:
+                if b == False:
+                    r += 1
+
             if n < ln:
-                return n - ln
+                if (ln - n) > r:
+                    return ln - n
+                else:
+                    return r
             else:
-                r = 0
-                for b in cl:
-                    if b:
-                        r += 1
-                return len(cl) - r
+                return r
 
 
 if __name__ == '__main__':
