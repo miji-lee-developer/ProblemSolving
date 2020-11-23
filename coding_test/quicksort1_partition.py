@@ -8,7 +8,19 @@ import sys
 
 # Complete the quickSort function below.
 def quickSort(arr):
-    return []
+    p = arr[0]
+    l = []
+    e = [p]
+    r = []
+    for i in range(1, len(arr)):
+        if arr[i] < p:
+            l.append(arr[i])
+        elif arr[i] == p:
+            e.append(p)
+        else:
+            r.append(arr[i])
+
+    return l + e + r
 
 if __name__ == '__main__':
     n = int(input())
