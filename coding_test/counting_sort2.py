@@ -8,7 +8,7 @@ import sys
 
 # Complete the countingSort function below.
 def countingSort(arr):
-    return []
+    return sorted(arr)
 
 if __name__ == '__main__':
     n = int(input())
