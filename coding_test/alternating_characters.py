@@ -8,7 +8,12 @@ import sys
 
 # Complete the alternatingCharacters function below.
 def alternatingCharacters(s):
-    return 0
+    res = 0
+    for i in range(1, len(s)):
+        if s[i - 1] == s[i]:
+            res += 1
+
+    return res
 
 if __name__ == '__main__':
     q = int(input())
