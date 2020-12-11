@@ -8,8 +8,13 @@ import sys
 
 # Complete the makingAnagrams function below.
 def makingAnagrams(s1, s2):
-    res = 0
-    return res
+    c = 0
+
+    for i in range(len(s1)):
+        if s1[i] in s2:
+            c += 1
+
+    return (len(s1) - c) + (len(s2) - c)
 
 if __name__ == '__main__':
     s1 = input()
