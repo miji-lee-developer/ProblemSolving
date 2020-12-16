@@ -8,7 +8,7 @@ import sys
 
 # Complete the stringConstruction function below.
 def stringConstruction(s):
-    return 0
+    return len(set(list(s)))
 
 if __name__ == '__main__':
     q = int(input())
