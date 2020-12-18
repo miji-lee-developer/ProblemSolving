@@ -8,7 +8,8 @@ import sys
 
 # Complete the icecreamParlor function below.
 def icecreamParlor(m, arr):
-    return []
+    res = []
+    return res
 
 if __name__ == '__main__':
     t = int(input())
