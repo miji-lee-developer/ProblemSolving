@@ -8,7 +8,8 @@ import sys
 
 # Complete the marcsCakewalk function below.
 def marcsCakewalk(calorie):
-    return 0
+    res = 0
+    return res
 
 if __name__ == '__main__':
     n = int(input())
