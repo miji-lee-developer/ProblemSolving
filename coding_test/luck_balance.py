@@ -8,7 +8,8 @@ import sys
 
 # Complete the luckBalance function below.
 def luckBalance(k, contests):
-    return 0
+    res = 0
+    return res
 
 if __name__ == '__main__':
     nk = input().split()
