@@ -8,7 +8,8 @@ import sys
 
 # Complete the maximumToys function below.
 def maximumToys(prices, k):
-    return 0
+    res = 0
+    return res
 
 if __name__ == '__main__':
     nk = input().split()
