@@ -8,7 +8,8 @@ import sys
 
 # Complete the maximumPerimeterTriangle function below.
 def maximumPerimeterTriangle(sticks):
-    return []
+    res = []
+    return res
 
 if __name__ == '__main__':
     n = int(input())
