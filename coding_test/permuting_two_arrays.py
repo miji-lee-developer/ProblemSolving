@@ -9,7 +9,7 @@ import sys
 # Complete the twoArrays function below.
 def twoArrays(k, A, B):
     res = ''
-    return res
+    return ''
 
 if __name__ == '__main__':
     q = int(input())
